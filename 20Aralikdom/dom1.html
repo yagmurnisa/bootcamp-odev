@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="number">Number</label>
+        <input type="text" id="number">
+    </div>
+    <div>
+        <button onclick="multiply()">Submit</button>
+    </div>
+</body>
+<script>
+    function multiply() {
+        let num = document.getElementById("number").value;
+        let newNum = num * 1.8; 
+        if (isNaN(newNum)) 
+            alert("Please enter a number");
+        else 
+            alert(newNum);
+    }
+</script>
+</html>
